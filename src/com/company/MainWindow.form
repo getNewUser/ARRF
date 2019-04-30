@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="38d6e" class="javax.swing.JList" binding="listOfElements">
+        <constraints border-constraint="West"/>
+        <properties/>
+      </component>
+      <component id="97fc2" class="javax.swing.JList" binding="listOfPushedElements">
+        <constraints border-constraint="East"/>
+        <properties/>
+      </component>
+      <component id="e0eb4" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
+      <component id="345bd" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints border-constraint="North"/>
+        <properties/>
+      </component>
+      <component id="45025" class="javax.swing.JProgressBar" binding="progressBar1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>

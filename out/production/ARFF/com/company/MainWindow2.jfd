@@ -1,0 +1,44 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:15:p, par l:::p {seq t {comp textField1:::::x, space s:::p, comp submitDirectoryButton:::p::p}, comp progressBar1::l:::x, seq l {comp scrollPane1:::p:450:p, space :p:28:p, comp pushElementsButton:::p::p, space :p:28:p, comp scrollPane2:::p:407:p}}, space ::57:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp submitDirectoryButton::b:p::p, comp textField1::b:p::p}, par l {seq {space :::p, par l:::p {comp scrollPane2::::488:x, comp scrollPane1::::488:x}}, seq l {space :p:241:p, comp pushElementsButton:::p::p}}, space ::69:x, comp progressBar1:::p::p, space :p:40:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "submitDirectoryButton"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "submitDirectoryButtonMouseClicked", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "listOfElements"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "listOfPushedElements"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "pushElementsButton"
+				"text": ">>"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "pushElementsButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "progressBar1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1065, 675 )
+		} )
+	}
+}
